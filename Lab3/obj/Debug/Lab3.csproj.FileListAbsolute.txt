@@ -1,0 +1,11 @@
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\bin\Debug\Lab3.exe.config
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\bin\Debug\Lab3.exe
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\bin\Debug\Lab3.pdb
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.csproj.AssemblyReference.cache
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.Lab3.resources
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.exe
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.pdb
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab3\obj\Debug\Lab3.exe.config

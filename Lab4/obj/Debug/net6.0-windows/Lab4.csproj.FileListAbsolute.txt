@@ -1,0 +1,17 @@
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.Lab4.resources
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.csproj.GenerateResource.cache
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.AssemblyInfoInputs.cache
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.AssemblyInfo.cs
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.csproj.CoreCompileInputs.cache
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.exe
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.deps.json
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.runtimeconfig.json
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.dll
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.pdb
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.dll
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\refint\Lab4.dll
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.pdb
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.genruntimeconfig.cache
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\ref\Lab4.dll
+D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.Properties.Resources.resources
