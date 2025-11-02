@@ -1,0 +1,10 @@
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\bin\Debug\Lab5.exe.config
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\bin\Debug\Lab5.exe
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\bin\Debug\Lab5.pdb
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.csproj.AssemblyReference.cache
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.exe
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.pdb
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.exe.config

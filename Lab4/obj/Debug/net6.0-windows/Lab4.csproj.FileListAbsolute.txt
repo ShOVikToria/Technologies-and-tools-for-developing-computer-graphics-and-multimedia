@@ -15,3 +15,21 @@ D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and
 D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.genruntimeconfig.cache
 D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\ref\Lab4.dll
 D:\Projects\3 kurs\1\Technologies and tools for developing computer graphics and multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.Properties.Resources.resources
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.exe
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.deps.json
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.runtimeconfig.json
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.dll
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\bin\Debug\net6.0-windows\Lab4.pdb
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.Lab4.resources
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.Properties.Resources.resources
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.csproj.GenerateResource.cache
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.AssemblyInfoInputs.cache
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.AssemblyInfo.cs
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.csproj.CoreCompileInputs.cache
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.sourcelink.json
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.dll
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\refint\Lab4.dll
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.pdb
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\Lab4.genruntimeconfig.cache
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab4\obj\Debug\net6.0-windows\ref\Lab4.dll
