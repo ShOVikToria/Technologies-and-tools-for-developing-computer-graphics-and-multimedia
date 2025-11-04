@@ -8,3 +8,4 @@ D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-mul
 D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.exe
 D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.pdb
 D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.exe.config
+D:\GitHub\3 kurs\Technologies-and-tools-for-developing-computer-graphics-and-multimedia\Lab5\obj\Debug\Lab5.Form1.resources

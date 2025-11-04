@@ -7,45 +7,41 @@ namespace Lab5
 {
     public partial class Form1 : Form
     {
-        // ----- Оригінальні дані -----
+        // Оригінальні дані (не змінюються)
         private readonly PointF[] originalPoints;
         private const string displayText = "Лабораторна №5";
         private readonly Font textFont;
-        private readonly PointF textOrigin = new PointF(80, 320);
+        private readonly PointF textOrigin = new PointF(400, 200);
 
-        // ----- Дві незалежні матриці -----
-        private readonly Matrix figureMatrix = new Matrix();   // для трикутника
-        private readonly Matrix textMatrix = new Matrix();   // для тексту
+        // Незалежні матриці
+        private readonly Matrix figureMatrix = new Matrix();
+        private readonly Matrix textMatrix = new Matrix();
 
         public Form1()
         {
             InitializeComponent();
             DoubleBuffered = true;
 
-            // ініціалізація геометрії
             originalPoints = new[]
             {
-                new PointF(150, 100),
-                new PointF(250, 200),
-                new PointF(50,  200)
+                new PointF(200, 250),
+                new PointF(300, 350),
+                new PointF(100,  350)
             };
 
             textFont = new Font("Arial", 28, FontStyle.Bold);
         }
-
-        // -----------------------------------------------------------------
-        //  PAINT
-        // -----------------------------------------------------------------
+        // PAINT
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
-            /* ---------- 1. Оригінальна фігура (сірий) ---------- */
+            // 1. Оригінальна фігура
             g.FillPolygon(Brushes.LightGray, originalPoints);
             g.DrawPolygon(Pens.Black, originalPoints);
 
-            /* ---------- 2. Оригінальний текст (світло‑сірий) ---------- */
+            // 2. Оригінальний текст
             GraphicsPath origPath = new GraphicsPath();
             origPath.AddString(displayText, textFont.FontFamily,
                                (int)textFont.Style, textFont.Size,
@@ -53,133 +49,109 @@ namespace Lab5
             g.FillPath(Brushes.LightGray, origPath);
             g.DrawPath(Pens.Gray, origPath);
 
-            /* ---------- 3. Трансформована фігура ---------- */
+            // 3. Трансформована фігура
             PointF[] fig = (PointF[])originalPoints.Clone();
             figureMatrix.TransformPoints(fig);
             g.FillPolygon(Brushes.Coral, fig);
             g.DrawPolygon(Pens.Red, fig);
 
-            /* ---------- 4. Трансформований текст ---------- */
+            // 4. Трансформований текст
             GraphicsPath txtPath = (GraphicsPath)origPath.Clone();
             txtPath.Transform(textMatrix);
             g.FillPath(Brushes.Navy, txtPath);
             g.DrawPath(Pens.DarkBlue, txtPath);
         }
 
-        // -----------------------------------------------------------------
-        //  КНОПКИ – ДІЇ НА ФІГУРУ
-        // -----------------------------------------------------------------
+        // ФУНКЦІЇ ДЛЯ ПОШУКУ ЦЕНТРУ 
+        private PointF GetCurrentFigureCenter()
+        {
+            PointF[] pts = (PointF[])originalPoints.Clone();
+            figureMatrix.TransformPoints(pts);
+            float cx = (pts[0].X + pts[1].X + pts[2].X) / 3f;
+            float cy = (pts[0].Y + pts[1].Y + pts[2].Y) / 3f;
+            return new PointF(cx, cy);
+        }
+
+        // ФІГУРА: Переміщення
         private void btnTranslate_Click(object sender, EventArgs e)
         {
-            figureMatrix.Translate(60, 40, MatrixOrder.Append);
+            figureMatrix.Translate(40, 20, MatrixOrder.Append);
             Invalidate();
         }
 
+        // ФІГУРА: Обертання 
         private void btnRotate_Click(object sender, EventArgs e)
         {
-            float cx = (originalPoints[0].X + originalPoints[1].X + originalPoints[2].X) / 3f;
-            float cy = (originalPoints[0].Y + originalPoints[1].Y + originalPoints[2].Y) / 3f;
+            PointF center = GetCurrentFigureCenter();
 
             Matrix m = new Matrix();
-            m.Translate(-cx, -cy, MatrixOrder.Append);
-            m.Rotate(45, MatrixOrder.Append);
-            m.Translate(cx, cy, MatrixOrder.Append);
+            m.Translate(-center.X, -center.Y, MatrixOrder.Append);
+            m.Rotate(15, MatrixOrder.Append);
+            m.Translate(center.X, center.Y, MatrixOrder.Append);
 
             figureMatrix.Multiply(m, MatrixOrder.Append);
             Invalidate();
         }
 
+        // ФІГУРА: Відображення
         private void btnReflect_Click(object sender, EventArgs e)
         {
+            PointF center = GetCurrentFigureCenter();
+
             Matrix m = new Matrix();
-            m.Translate(-200, 0, MatrixOrder.Append);
+            m.Translate(-(originalPoints[1].X), 0, MatrixOrder.Append);
             m.Scale(-1, 1, MatrixOrder.Append);
-            m.Translate(200, 0, MatrixOrder.Append);
+            m.Translate(originalPoints[1].X, 0, MatrixOrder.Append);
 
             figureMatrix.Multiply(m, MatrixOrder.Append);
             Invalidate();
         }
 
+        //private void btnReflect_Click(object sender, EventArgs e)
+        //{
+        //    PointF center = GetCurrentFigureCenter();
+
+        //    Matrix m = new Matrix();
+        //    m.Translate(0, -center.Y, MatrixOrder.Append);
+        //    m.Scale(1, -1, MatrixOrder.Append);
+        //    m.Translate(0, center.Y, MatrixOrder.Append);
+
+        //    figureMatrix.Multiply(m, MatrixOrder.Append);
+        //    Invalidate();
+        //}
+
+        // =================================================================
+        // ФІГУРА: Розтягування
+        // =================================================================
         private void btnScale_Click(object sender, EventArgs e)
         {
-            float cx = (originalPoints[0].X + originalPoints[1].X + originalPoints[2].X) / 3f;
-            float cy = (originalPoints[0].Y + originalPoints[1].Y + originalPoints[2].Y) / 3f;
+            PointF center = GetCurrentFigureCenter();
 
             Matrix m = new Matrix();
-            m.Translate(-cx, -cy, MatrixOrder.Append);
+            m.Translate(-center.X, -center.Y, MatrixOrder.Append);
             m.Scale(1.6f, 0.6f, MatrixOrder.Append);
-            m.Translate(cx, cy, MatrixOrder.Append);
+            m.Translate(center.X, center.Y, MatrixOrder.Append);
 
             figureMatrix.Multiply(m, MatrixOrder.Append);
             Invalidate();
         }
 
-        // -----------------------------------------------------------------
-        //  КНОПКИ – ДІЇ НА ТЕКСТ (те саме, але на textMatrix)
-        // -----------------------------------------------------------------
+        // ТЕКСТ: Переміщення
         private void btnTextTranslate_Click(object sender, EventArgs e)
         {
             textMatrix.Translate(60, 40, MatrixOrder.Append);
             Invalidate();
         }
 
-        private void btnTextRotate_Click(object sender, EventArgs e)
-        {
-            // центр тексту – центр його bounding‑box
-            GraphicsPath p = new GraphicsPath();
-            p.AddString(displayText, textFont.FontFamily,
-                        (int)textFont.Style, textFont.Size,
-                        textOrigin, StringFormat.GenericDefault);
-            RectangleF rc = p.GetBounds();
-            float cx = rc.Left + rc.Width / 2f;
-            float cy = rc.Top + rc.Height / 2f;
-
-            Matrix m = new Matrix();
-            m.Translate(-cx, -cy, MatrixOrder.Append);
-            m.Rotate(30, MatrixOrder.Append);
-            m.Translate(cx, cy, MatrixOrder.Append);
-
-            textMatrix.Multiply(m, MatrixOrder.Append);
-            Invalidate();
-        }
-
-        private void btnTextReflect_Click(object sender, EventArgs e)
-        {
-            Matrix m = new Matrix();
-            m.Translate(-200, 0, MatrixOrder.Append);
-            m.Scale(-1, 1, MatrixOrder.Append);
-            m.Translate(200, 0, MatrixOrder.Append);
-
-            textMatrix.Multiply(m, MatrixOrder.Append);
-            Invalidate();
-        }
-
-        private void btnTextScale_Click(object sender, EventArgs e)
-        {
-            // центр тексту
-            GraphicsPath p = new GraphicsPath();
-            p.AddString(displayText, textFont.FontFamily,
-                        (int)textFont.Style, textFont.Size,
-                        textOrigin, StringFormat.GenericDefault);
-            RectangleF rc = p.GetBounds();
-            float cx = rc.Left + rc.Width / 2f;
-            float cy = rc.Top + rc.Height / 2f;
-
-            Matrix m = new Matrix();
-            m.Translate(-cx, -cy, MatrixOrder.Append);
-            m.Scale(1.4f, 0.7f, MatrixOrder.Append);
-            m.Translate(cx, cy, MatrixOrder.Append);
-
-            textMatrix.Multiply(m, MatrixOrder.Append);
-            Invalidate();
-        }
-
-        // -----------------------------------------------------------------
-        //  СКИДАННЯ
-        // -----------------------------------------------------------------
-        private void btnReset_Click(object sender, EventArgs e)
+        // СКИДАННЯ
+        private void btnResetFigure_Click(object sender, EventArgs e)
         {
             figureMatrix.Reset();
+            Invalidate();
+        }
+
+        private void btnResetText_Click(object sender, EventArgs e)
+        {
             textMatrix.Reset();
             Invalidate();
         }
